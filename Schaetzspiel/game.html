@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter's Schätzspiel</title>
+    <!-- CSS Datei direkt verlinken -->
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="schatzspiel-container">
+        <h1>Schätzspiel</h1>
+
+        <div id="input-section">
+            <label for="answer1">Antwort Spieler 1:</label>
+            <input type="number" id="answer1" placeholder="Antwort Spieler 1">
+            
+            <label for="answer2">Antwort Spieler 2:</label>
+            <input type="number" id="answer2" placeholder="Antwort Spieler 2">
+            
+            <label for="correctAnswerInput">Korrekte Antwort:</label>
+            <input type="number" id="correctAnswerInput" placeholder="Korrekte Antwort">
+        </div>
+
+        <div id="button-section">
+            <button id="reveal-players">Spielerantworten anzeigen</button>
+            <button id="reveal-correct-answer">Korrekte Antwort anzeigen</button>
+        </div>
+
+        <div id="line-chart-container">
+            <div id="line-chart"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript Datei direkt verlinken -->
+    <script src="game.js"></script>
+</body>
+</html>

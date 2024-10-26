@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter's Quizzduell</title>
+    <link rel="stylesheet" href="home.css">
+    
+    <!-- Firebase SDKs als Script Tags einbinden -->
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js"></script>
+    <script>
+        // Firebase-Konfiguration
+        const firebaseConfig = {
+            apiKey: "AIzaSyB2wysKM_DQBAY_SMGnVi28prMt7J7lsqY",
+            authDomain: "quizz-fc552.firebaseapp.com",
+            databaseURL: "https://quizz-fc552-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "quizz-fc552",
+            storageBucket: "quizz-fc552.appspot.com",
+            messagingSenderId: "163021286502",
+            appId: "1:163021286502:web:0b70ddc6eb6dcec0ce51a7",
+            measurementId: "G-ZYFT0CG5CR"
+        };
+
+        // Firebase initialisieren
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+<body>
+    <h1>Peter's Quizzduell</h1>
+
+    <div id="start-screen">
+        <label for="gameMode">Spielmodus:</label>
+        <br>
+        <select id="gameMode">
+            <option value="0">Modus auswählen</option>
+            <option value="fragespiel">Fragespiel</option>
+            <option value="schaetzspiel">Schätzspiel</option>
+        </select>
+
+        <label for="playerCount">Spieler:</label>
+        <br>
+        <select id="playerCount">
+            <option value="0">Anzahl auswählen</option>           
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <div id="playerCountLabel"></div>
+        <div id="playerNames">
+            <!-- Eingabefelder für Spielernamen -->
+        </div>
+        <button id="startGame">Spiel starten</button>
+    </div>
+
+    <!-- JavaScript Datei direkt verlinken, da sie im Hauptordner liegt -->
+    <script src="home.js"></script>
+</body>
+</html>

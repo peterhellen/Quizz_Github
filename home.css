@@ -1,0 +1,102 @@
+/* home.css */
+body {
+    background-image: url('Hintergrundsbild-Quizzduell.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+#start-screen {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 60%;
+    max-width: 800px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+select {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select:hover {
+    background-color: #f0f0f0;
+}
+
+#playerCountLabel {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#playerNames {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.player-input {
+    font-size: 15px;
+    padding: 12px; /* Gleicher Padding-Wert wie bei 'select' */
+    margin-bottom: 5px;
+    border-radius: 5px; /* Gleiche Rundung wie 'select' */
+    border: none; /* Kein sichtbarer Rand, genau wie bei 'select' */
+    outline: none;
+    color: black;
+    background-color: white; /* Gleiche Hintergrundfarbe wie 'select' */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.player-input:hover {
+    background-color: #f0f0f0; /* Gleicher Hover-Effekt wie bei 'select' */
+}
+
+button {
+    font-size: 24px;
+    padding: 15px 30px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
